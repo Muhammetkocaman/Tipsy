@@ -127,11 +127,31 @@
                                             <constraint firstItem="wvg-zi-uHH" firstAttribute="leading" secondItem="4Kz-KP-Wql" secondAttribute="leading" id="z2N-sT-SfV"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp9-5I-Qof">
+                                        <rect key="frame" x="107" y="564" width="200" height="54"/>
+                                        <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="XgZ-1M-Ff8"/>
+                                            <constraint firstAttribute="height" constant="54" id="vg2-Uu-RKk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Calculate">
+                                            <color key="titleColor" red="0.97254901959999995" green="1" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10f"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeU-ob-cbi"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84313725490196079" green="0.97647058823529409" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="4Kz-KP-Wql" firstAttribute="top" secondItem="KF2-lb-2g9" secondAttribute="top" constant="20" id="102-mO-Rf4"/>
                                     <constraint firstAttribute="trailing" secondItem="4Kz-KP-Wql" secondAttribute="trailing" constant="20" id="FPW-eG-r7L"/>
+                                    <constraint firstItem="Gp9-5I-Qof" firstAttribute="centerX" secondItem="KF2-lb-2g9" secondAttribute="centerX" id="moG-nZ-WO0"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gp9-5I-Qof" secondAttribute="bottom" constant="76" id="w0b-vO-tZ2"/>
                                     <constraint firstItem="4Kz-KP-Wql" firstAttribute="leading" secondItem="KF2-lb-2g9" secondAttribute="leading" constant="20" id="xyN-nS-7ih"/>
                                 </constraints>
                             </view>
@@ -165,24 +185,6 @@
                                     <constraint firstAttribute="trailing" secondItem="jg3-q9-5hT" secondAttribute="trailing" constant="50" id="ncU-1s-Q7T"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp9-5I-Qof">
-                                <rect key="frame" x="107" y="808" width="200" height="54"/>
-                                <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="XgZ-1M-Ff8"/>
-                                    <constraint firstAttribute="height" constant="54" id="vg2-Uu-RKk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Calculate">
-                                    <color key="titleColor" red="0.97254901959999995" green="1" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10f"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QeU-ob-cbi"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FbC-Ug-OLg"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="1" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -191,9 +193,7 @@
                             <constraint firstItem="KoM-sb-rZM" firstAttribute="top" secondItem="FbC-Ug-OLg" secondAttribute="top" constant="10" id="CWs-Op-r5e"/>
                             <constraint firstItem="KF2-lb-2g9" firstAttribute="leading" secondItem="mlc-qa-UDb" secondAttribute="leading" id="FO3-zY-4Jq"/>
                             <constraint firstItem="KF2-lb-2g9" firstAttribute="top" secondItem="KoM-sb-rZM" secondAttribute="bottom" constant="40" id="OlE-DJ-nke"/>
-                            <constraint firstItem="Gp9-5I-Qof" firstAttribute="centerX" secondItem="mlc-qa-UDb" secondAttribute="centerX" id="SMQ-cm-UBn"/>
                             <constraint firstAttribute="trailing" secondItem="KF2-lb-2g9" secondAttribute="trailing" id="Vc7-Q0-0lk"/>
-                            <constraint firstItem="Gp9-5I-Qof" firstAttribute="bottom" secondItem="FbC-Ug-OLg" secondAttribute="bottom" id="fh2-8F-Ph9"/>
                             <constraint firstItem="FbC-Ug-OLg" firstAttribute="trailing" secondItem="KoM-sb-rZM" secondAttribute="trailing" id="nDh-1u-O1A"/>
                             <constraint firstAttribute="bottom" secondItem="KF2-lb-2g9" secondAttribute="bottom" id="wiE-VX-PBC"/>
                         </constraints>
@@ -256,8 +256,8 @@
                                     <constraint firstItem="cDc-PO-qoO" firstAttribute="top" secondItem="9cB-3m-144" secondAttribute="bottom" id="wO2-6u-UAP"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split between 2 people, with 10% tip." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbQ-ca-OmW">
-                                <rect key="frame" x="50" y="305" width="392" height="117"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Split between 2 people, with 10% tip." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbQ-ca-OmW">
+                                <rect key="frame" x="50" y="305" width="330" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="117" id="5jI-vz-zW6"/>
                                 </constraints>
@@ -265,8 +265,8 @@
                                 <color key="textColor" red="0.58431372550000005" green="0.60392156860000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bu-wo-2SR">
-                                <rect key="frame" x="107" y="791" width="200" height="54"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bu-wo-2SR">
+                                <rect key="frame" x="115" y="766" width="200" height="54"/>
                                 <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="Cgh-QF-eAU"/>
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLi-Eb-NGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="118"/>
+            <point key="canvasLocation" x="892.75362318840587" y="117.85714285714285"/>
         </scene>
     </scenes>
 </document>
